@@ -1,0 +1,106 @@
+.App {
+  text-align: left;
+  font-family: "Public Sans";
+  font-size: 18px;
+}
+
+.container {
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 10%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-dark-gray {
+  background-color: hsl(220, 16%, 96%);
+}
+.bg-light-gray {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+.font-700 {
+  font-weight: 700;
+}
+
+.font-light {
+  opacity: 0.6;
+}
+
+.title {
+  padding-bottom: 25px;
+}
+.description {
+  padding-bottom: 5px;
+}
+
+.box {
+  width: 300px;
+  margin-top: 3%;
+  margin-right: 2%;
+}
+
+.box-title {
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.box-text-container {
+  padding: 25px;
+}
+
+.box-text {
+  padding-bottom: 20px;
+}
+
+.card {
+  width: 300px;
+  /* width: 18.75rem; */
+  margin-top: 3%;
+  margin-right: 2%;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.card-image {
+  height: 200px;
+  width: 300px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-text-container {
+  padding: 25px;
+}
+
+.card-text {
+  padding-bottom: 10px;
+}
+
+.card-author {
+  font-size: small;
+}
+
+@media only screen and (max-width: 500px) {
+  .row {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* .container {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+  } */
+}
