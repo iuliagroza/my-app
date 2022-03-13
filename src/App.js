@@ -20,6 +20,7 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 
+/*Test*/
 function App() {
   return (
     <div className="App">
