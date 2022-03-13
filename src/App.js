@@ -21,6 +21,7 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 
 /*Test*/
+/*Test2*/
 function App() {
   return (
     <div className="App">
