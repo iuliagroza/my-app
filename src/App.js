@@ -13,9 +13,6 @@ import Title from "./components/Title";
 import Card from "./components/Card/Card";
 import Description from "./components/Description";
 import Box from "./components/Box/Box";
-import BoxImage from "./components/Box/BoxImage";
-import BoxTitle from "./components/Box/BoxTitle";
-import BoxBody from "./components/Box/BoxBody";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
@@ -35,45 +32,41 @@ function App() {
         <Description text={"Control you finances like never before."} />
 
         <div className="row">
-          <Box>
-            <BoxImage src={online} />
-            <BoxTitle text={"Online Banking"} />
-            <BoxBody
-              text={
-                "Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."
-              }
-            />
-          </Box>
+          <Box
+            image={online}
+            alt={"hand holding credit cards"}
+            title={"Online Banking"}
+            body={
+              "Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."
+            }
+          />
 
-          <Box>
-            <BoxImage src={budgeting} />
-            <BoxTitle text={"Simple Budgeting"} />
-            <BoxBody
-              text={
-                "See exactly where your money goes each month. Receive notifications when you're close to hitting your limits."
-              }
-            />
-          </Box>
+          <Box
+            image={budgeting}
+            alt={"phone with a dollar sign"}
+            title={"Simple Budgeting"}
+            body={
+              "See exactly where your money goes each month. Receive notifications when you're close to hitting your limits."
+            }
+          />
 
-          <Box>
-            <BoxImage src={onboarding} />
-            <BoxTitle text={"Fast Onboarding"} />
-            <BoxBody
-              text={
-                "We don't do branches. Open your account in minutes online and start taking control of your finances right away."
-              }
-            />
-          </Box>
+          <Box
+            image={onboarding}
+            alt={"people talking"}
+            title={"Fast Onboarding"}
+            body={
+              "We don't do branches. Open your account in minutes online and start taking control of your finances right away."
+            }
+          />
 
-          <Box>
-            <BoxImage src={api} />
-            <BoxTitle text={"Open API"} />
-            <BoxBody
-              text={
-                "Manage your savings, invest in pension and much more in your account. Tracking your money has never been easier."
-              }
-            />
-          </Box>
+          <Box
+            image={api}
+            alt={"microchip"}
+            title={"Open API"}
+            body={
+              "Manage your savings, invest in pension and much more in your account. Tracking your money has never been easier."
+            }
+          />
         </div>
       </div>
 
@@ -82,6 +75,7 @@ function App() {
         <div className="row">
           <Card
             image={currency}
+            alt={"banknotes"}
             author={"by Claire Robinson"}
             title={"Receive money in any currency with no fees"}
             body={
@@ -91,6 +85,7 @@ function App() {
 
           <Card
             image={restaurant}
+            alt={"meal in a restaurant"}
             author={"by Wilson Hutton"}
             title={"Treat yourself without worring about money"}
             body={
@@ -100,6 +95,7 @@ function App() {
 
           <Card
             image={plane}
+            alt={"plane wing"}
             author={"by Wilson Hutton"}
             title={"Take your Easybank card wherever you want"}
             body={
@@ -109,6 +105,7 @@ function App() {
 
           <Card
             image={confetti}
+            alt={"confetti"}
             author={"by Claire Robinson"}
             title={"Our invite-only Beta accounts is now live!"}
             body={

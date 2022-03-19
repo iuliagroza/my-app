@@ -6,7 +6,7 @@ import CardTitle from "./CardTitle";
 function Card(props) {
   return (
     <div className="card">
-      <CardImage src={props.image} />
+      <CardImage src={props.image} alt={props.alt} />
       <div className="card-text-container">
         <CardAuthor text={props.author} />
         <CardTitle text={props.title} />
