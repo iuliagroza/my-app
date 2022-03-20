@@ -1,11 +1,12 @@
-import React from "react"
+import React from "react";
 
-import logo from "../images/logo.svg"
+import logo from "../images/logo.svg";
 
-import Button from "./Button"
-import Icon from "./Icon"
+import Button from "./Button";
+import Menu from "./Menu/Menu";
+import ToggleButton from "./Menu/ToggleButton";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <nav className="navbar">
       <div className="navbar__wrapper">
@@ -22,10 +23,13 @@ function Navbar() {
         <div className="navbar__button">
           <Button text="Request Invite" />
         </div>
-        <Icon />
+        <ToggleButton
+          handleShowMenu={props.handleShowMenu}
+          showMenu={props.showMenu}
+        />
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

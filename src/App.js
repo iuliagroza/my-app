@@ -16,11 +16,17 @@ import Box from "./components/Box/Box";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
+import { useState } from "react";
+import Menu from "./components/Menu/Menu";
 
 function App() {
+  const [showMenu, setShowMenu] = useState(false);
+  const handleShowMenu = () => setShowMenu(!showMenu);
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar handleShowMenu={handleShowMenu} showMenu={showMenu} />
+      {showMenu && <Menu />}
       <Banner />
       <div className="bg-dark-gray container">
         <Title text={"Why choose Easybank?"} />

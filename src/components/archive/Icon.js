@@ -1,9 +1,9 @@
-import React, { useContext } from "react"
-import "../App.css"
+import React, { useContext } from "react";
+import "../App.css";
 
-import hamburger from "../images/icon-hamburger.svg"
-import close from "../images/icon-close.svg"
-import { ToggleContext } from "./ToggleContext"
+import hamburger from "../images/icon-hamburger.svg";
+import close from "../images/icon-close.svg";
+import { ToggleContext } from "./ToggleContext";
 
 function Icon() {
   /*const { state, setToggle } = useContext(ToggleContext);
@@ -22,7 +22,7 @@ function Icon() {
         <img src={hamburger} alt="hamburger" />
       )}
     </button>
-  )
+  );
 }
 
-export default Icon
+export default Icon;
