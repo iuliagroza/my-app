@@ -306,7 +306,7 @@
     position: relative;
     text-align: center;
     padding: 2rem;
-    margin-top: -2rem;
+    margin-top: 6rem;
   }
 
   .banner__title {
@@ -331,8 +331,8 @@
 
   .banner__phones {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     right: 0;
     flex: 1;
     z-index: 1;
