@@ -19,6 +19,7 @@
 .bg-dark-gray {
   background-color: hsl(220, 16%, 96%);
 }
+
 .bg-light-gray {
   background-color: hsl(0, 0%, 98%);
 }
@@ -30,6 +31,7 @@
 .font-400 {
   font-weight: 400;
 }
+
 .font-700 {
   font-weight: 700;
 }
@@ -41,6 +43,7 @@
 .title {
   padding-bottom: 25px;
 }
+
 .description {
   padding-bottom: 5px;
 }
@@ -92,6 +95,18 @@
   font-size: small;
 }
 
+@media screen and (max-width: 960px) {
+  .center {
+    text-align: center;
+  }  
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* BUTTON */
 .gradient-btn {
   padding: 0.8rem 2rem;
@@ -137,7 +152,7 @@
   align-items: center;
 }
 
-.navbar__logo > img {
+.navbar__logo>img {
   width: 10rem;
   height: auto;
 }
@@ -149,7 +164,7 @@
   align-items: center;
 }
 
-.navbar__items > span {
+.navbar__items>span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,7 +176,7 @@
   transition: all ease-out 0.25s;
 }
 
-.navbar__items > span::after {
+.navbar__items>span::after {
   content: " ";
   display: block;
   width: 100%;
@@ -171,11 +186,11 @@
   transition: all ease-out 0.25s;
 }
 
-.navbar__items > span:hover {
+.navbar__items>span:hover {
   color: #000000;
 }
 
-.navbar__items > span:hover::after {
+.navbar__items>span:hover::after {
   content: " ";
   display: block;
   width: 100%;
@@ -205,7 +220,7 @@
   height: 38rem;
 }
 
-.banner__wrapper {
+.banner__wrapper {    
   max-width: 1080px;
   max-height: 100%;
   margin: 0 auto;
@@ -222,7 +237,7 @@
 }
 
 .banner__bg {
-  background-image: url(./images/bg-intro-desktop.svg);
+  background-image: url(../src/images/bg-intro-desktop.svg);
   background-size: cover;
   position: absolute;
   top: -12.5rem;
@@ -238,13 +253,6 @@
   padding: 8rem 0;
 }
 
-.banner__title {
-  font-size: 3.5rem;
-  font-weight: 300;
-  color: #2d314d;
-  margin-bottom: 1rem;
-}
-
 .banner__desc {
   max-width: 28rem;
   line-height: 1.5em;
@@ -253,18 +261,26 @@
   margin-bottom: 2rem;
 }
 
-.banner__right {
+.banner__title {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #2d314d;
+  margin-bottom: 1rem;
+}
+
+.bannerr__right {    
   position: relative;
-  max-width: 40vw;
+  max-width: 50vw;
   flex: 1;
 }
 
 .banner__phones {
   position: absolute;
   z-index: 1;
-  top: -5.5rem;
-  right: -12rem;
+  top: -7.5rem;
+  right: -16rem;
 }
+
 
 @media screen and (max-width: 960px) {
   .banner {
@@ -278,7 +294,7 @@
   }
 
   .banner__bg {
-    background-image: url(./images/bg-intro-mobile.svg);
+    background-image: url(../src/images/bg-intro-mobile.svg);
     background-size: cover;
     top: -12.5rem;
     left: 0;
@@ -307,7 +323,7 @@
   .banner__right {
     position: relative;
     min-width: 90vw;
-    max-height: 40vh;
+    max-height: 50vh;
     margin: 0 auto;
     flex: 1;
     display: flex;
@@ -315,6 +331,8 @@
 
   .banner__phones {
     position: relative;
+    width: 100%;
+    height: 100%;
     right: 0;
     flex: 1;
     z-index: 1;
@@ -337,7 +355,7 @@
   flex: 1;
 }
 
-.footer__contacts > img {
+.footer__contacts>img {
   margin-bottom: 2.75rem;
 }
 
@@ -362,8 +380,8 @@ svg {
   flex: 1;
 }
 
-.item1 > span,
-.item2 > span {
+.item1>span,
+.item2>span {
   display: block;
   font-size: 0.9rem;
   line-height: 2rem;
@@ -371,8 +389,8 @@ svg {
   cursor: pointer;
 }
 
-.item1 > span:hover,
-.item2 > span:hover {
+.item1>span:hover,
+.item2>span:hover {
   color: #31d35c;
 }
 
@@ -384,7 +402,7 @@ svg {
   flex-direction: column;
 }
 
-.footer__button > span {
+.footer__button>span {
   color: #9698a6;
   font-size: 0.9rem;
   display: block;
@@ -406,7 +424,7 @@ svg {
     display: block;
   }
 
-  .footer__contacts > img {
+  .footer__contacts>img {
     display: block;
     margin: 2rem auto;
   }
@@ -433,11 +451,12 @@ svg {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 960px) {
   .row {
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
   }
+
   /* MENU */
   .menu {
     display: flex;
@@ -453,6 +472,7 @@ svg {
     margin-left: -200px;
     left: 50%;
   }
+
   .menu-item {
     padding: 10px;
     color: hsl(233, 26%, 24%);
@@ -463,6 +483,7 @@ svg {
   .navbar__button {
     display: none;
   }
+
   .nav-icon {
     display: block;
     border: none;

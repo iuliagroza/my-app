@@ -28,7 +28,7 @@ function App() {
       <Navbar handleShowMenu={handleShowMenu} showMenu={showMenu} />
       {showMenu && <Menu />}
       <Banner />
-      <div className="bg-dark-gray container">
+      <div className="bg-dark-gray container center">
         <Title text={"Why choose Easybank?"} />
         <Description
           text={
@@ -76,9 +76,9 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-light-gray container">
+      <div className="bg-light-gray container center">
         <Title text={"Latest Articles"} />
-        <div className="row">
+        <div className="row articles">
           <Card
             image={currency}
             alt={"banknotes"}

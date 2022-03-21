@@ -1,6 +1,6 @@
 import React from "react"
 
-import logoAlt from "../images/logo.svg"
+import logoAlt from "../images/logo-white.svg"
 import { ReactComponent as Facebook } from "../images/icon-facebook.svg"
 import { ReactComponent as Twitter } from "../images/icon-twitter.svg"
 import { ReactComponent as Youtube } from "../images/icon-youtube.svg"
